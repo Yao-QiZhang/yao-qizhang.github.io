@@ -12,7 +12,7 @@
 - Previous education: Institute of Theoretical Physics, Chinese Academy of Sciences, 2020–2025; Beijing Normal University, 2016–2020.
 - ORCID: 0000-0001-9211-1952.
 - Publications: 14 records returned by the author query on 2026-08-26.
-- Additional CV facts: Song He as PhD advisor, one 2022 presentation, and 2021/2022 Shu-Guang Awards of ITP-CAS.
+- Additional CV facts: Song He as PhD advisor and one 2022 presentation.
 
 Unconfirmed items remain omitted rather than invented. The original `my_CV 2` files are preserved unchanged.
 
