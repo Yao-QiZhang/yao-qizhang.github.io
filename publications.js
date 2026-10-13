@@ -1,4 +1,5 @@
 window.PUBLICATIONS = [
+  { id: "de-sitter-wavefunction-polygon-graphs", year: 2026, title: "de Sitter Wavefunction from Quadrangular Polylogarithms: Polygon Graphs", authors: "Ferro, Livia; Lukowski, Tomasz; Paranjape, Shruti; Ren, Lecheng; Spradlin, Marcus; Volovich, Anastasia; Weng, He-Chen; Zhang, Yao-Qi", status: "Preprint", arxiv: "2610.06772" },
   { id: "de-sitter-wavefunction", year: 2026, title: "de Sitter Wavefunction from Quadrangular Polylogarithms: Chain Graphs", authors: "Ferro, Livia; Lukowski, Tomasz; Ren, Lecheng; Spradlin, Marcus; Volovich, Anastasia; Weng, He-Chen; Zhang, Yao-Qi", status: "Preprint", arxiv: "2605.06542", inspire: "https://inspirehep.net/literature/3152782" },
   { id: "generalised-cluster-adjacency", year: 2026, title: "Generalised Cluster Adjacency for Cosmology", authors: "Capuano, Mattia; Ferro, Livia; Lukowski, Tomasz; Palazio, Alessandro; Zhang, Yao-Qi", status: "Preprint", arxiv: "2603.09965", inspire: "https://inspirehep.net/literature/3128163" },
   { id: "loops-and-legs", year: 2026, title: "Loops and legs: ABJM amplitudes from f-graphs", authors: "He, Song; Zhang, Yao-Qi", status: "JHEP 05 (2026) 218", arxiv: "2601.21980", doi: "10.1007/JHEP05(2026)218", inspire: "https://inspirehep.net/literature/3113019" },
@@ -22,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const links = [
       `<a href="https://arxiv.org/abs/${paper.arxiv}">arXiv:${paper.arxiv}</a>`,
       paper.doi ? `<a href="https://doi.org/${paper.doi}">DOI</a>` : "",
-      `<a href="${paper.inspire}">INSPIRE</a>`
+      paper.inspire ? `<a href="${paper.inspire}">INSPIRE</a>` : ""
     ].filter(Boolean).join("");
     return `<article class="publication" id="${paper.id}"><div class="publication-year">${paper.year}</div><div><h2>${paper.title}</h2><p class="publication-authors">${paper.authors}</p><p class="publication-meta"><span class="status">${paper.status}</span></p><div class="publication-links">${links}</div></div></article>`;
   }).join("");

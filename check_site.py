@@ -31,8 +31,8 @@ def main() -> int:
 
     publication_source = (ROOT / "publications.js").read_text(encoding="utf-8")
     publication_count = len(re.findall(r"\{ id: ", publication_source))
-    if publication_count != 14:
-        errors.append(f"expected 14 publication records, found {publication_count}")
+    if publication_count != 15:
+        errors.append(f"expected 15 publication records, found {publication_count}")
     for required in ("style.css", "site.js", "publications.js", "SITE_SPEC.md"):
         if not (ROOT / required).is_file():
             errors.append(f"missing required file: {required}")

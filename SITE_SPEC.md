@@ -27,7 +27,7 @@ Unconfirmed items remain omitted rather than invented. The original `my_CV 2` fi
 
 - `index.html`: short profile and selected work.
 - `research.html`: research themes.
-- `publications.html`: all 14 publication records.
+- `publications.html`: 15 publication records, including arXiv:2610.06772 added on 2026-10-13.
 - `cv.html`: verified education, position, presentation, and awards.
 - `talks.html`: selected talks, with a public slide PDF for the Pollica cosmology/QLi talk.
 - `interests.html`: whisky, Quenya, and theater.
